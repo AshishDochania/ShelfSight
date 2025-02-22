@@ -1,0 +1,68 @@
+/* src/frontend/src/App.css */
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f0f0f0;
+  }
+  
+  .main-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .store-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .shelf {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  .shelf.green { background-color: #a3e4a3; }
+  .shelf.yellow { background-color: #fff3a3; }
+  .shelf.red { background-color: #ffa3a3; }
+  
+  .key-metrics {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+  
+  .metric {
+    text-align: center;
+  }
+  
+  .task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  
+  .task.high { border-left: 5px solid red; }
+  .task.medium { border-left: 5px solid yellow; }
+  .task.low { border-left: 5px solid green; }
+  
